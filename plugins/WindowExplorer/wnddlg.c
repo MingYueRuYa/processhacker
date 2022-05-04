@@ -266,10 +266,7 @@ PWE_WINDOW_NODE WepAddChildWindowNode(
     else
     {
         // This is a root node.
-        childNode->Node.Expanded = TRUE;
-
-        PhAddItemList(Context->NodeRootList, childNode);
-    }
+        childNode->Node.Expanded = TRUE; PhAddItemList(Context->NodeRootList, childNode); }
 
     return childNode;
 }
